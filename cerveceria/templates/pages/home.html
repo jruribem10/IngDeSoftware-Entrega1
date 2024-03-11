@@ -1,0 +1,32 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Cervecería Artesanal - Inicio{% endblock %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('threemanPub/imagenes/hakuna/eljefe.png') no-repeat center top fixed;
+            background-size: cover;
+        }
+
+        .jumbotron {
+            /* Ajusta los estilos del jumbotron según tus necesidades */
+            color: #fff; /* Color del texto en el jumbotron */
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">¡ThreeMan Pub!</h1>
+        <p class="lead">Descubre nuestra gran variedad de cervezas artesanales producidas en Antioquia.</p>
+        <hr class="my-4">
+        <p>Explora nuestra carta de cervezas y encuentra tu favorita.</p>
+    </div>
+
+    <!-- Agrega más secciones o contenido según tus necesidades -->
+{% endblock %}
